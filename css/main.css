@@ -22,6 +22,9 @@ body{
 	color: #444;
 	font-family: "Helvetica Neue", Helvetica, Arial, Sans-serif;
 }
+img.embed-responsive-item{
+	width: 100%;
+}
 span.mejs-duration{
 	display: none;
 }
