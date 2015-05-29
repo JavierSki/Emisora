@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title>Pagina no encontrada</title>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+		<style>
+			.alert{
+				font-size: 20px;
+			}
+			.btn-link{
+				text-decoration: underline;
+			}
+			.e404{
+				background: url(dist/img/404.jpg) no-repeat fixed;
+				width: 100%;
+				position: fixed;
+				top: 0;
+				right: 0;
+				background-size: cover;
+				left: 0;
+				height: 700px;
+			}
+			.error{
+				font-style: italic;
+				font-size: medium;
+			}
+			.oops{
+				display: block;
+				font-size: 40px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="e404" alt="Pagina no Encontrada">
+				<div class="alert">
+					<span class="oops">Ooops!</span>
+					Pagina no Encontrada!
+					<span class="error">Error 404</span>
+				</div>
+					
+				<div class="return">
+					<button type="button" class="btn btn-link" href="/index.html">Regrese al Inicio</button>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang='es'>
+	<head>
+		<title>Emisora La U Radio | Corporacion Universitaria Minuto</title>
+		<!-- Metas -->
+		<meta charset="utf-8"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="author" content=""/>
+		<meta name="description" content="Pagina web desarrollada por estudiantes de Tecnologia en informatica para el area especial de Radio de Uniminuto."/>
+		<!-- <meta http-equiv="refresh" content="1; url=404.htm"> --> 
+		<meta name="keywords" content="radio, uniminuto, universidad, radial, la u radio, giro en u, radio universitaria, emisoralauradio, emisora"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+		<link href="dist/img/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+		<link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+		<link href="http://fonts.googleapis.com/css?family=Covered+By+Your+Grace" rel="stylesheet" type="text/css">
+		<!-- CSS Global -->
+		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+		<link href="bootstrap/css/bootstrap.css" rel="stylesheet"/>
+		<!-- CSS Plugin -->
+		<link href="css/social-buttons.css" rel="stylesheet"/>
+		<link href="css/mix.css" rel="stylesheet"/>
+		<link href="font_awesome/css/font-awesome.min.css" rel="stylesheet"/>
+		<link href="css/animate.min.css" rel="stylesheet"/>
+		<!-- CSS Tema -->
+		<link href="css/mediaelementplayer.min.css" rel="stylesheet"/>
+		<link href="css/main.css" rel="stylesheet"/>
+		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!--[if lt IE 9]>
+	    	<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	    	<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	    <![endif]-->
+	    <style>
+	    	.fluid-width-video-wrapper{
+	    		padding: 0;
+	    		position: relative;
+	    		width: 100%;
+	    	}
+	    	.fluid-width-video-wrapper iframe,
+	    	.fluid-width-video-wrapper object,
+	    	.fluid-width-video-wrapper embed{
+	    		left: 0;
+	    		/*height:100%;*/
+	    		position: absolute;
+	    		top: 0;
+	    		width: 100%;
+	    	}
+	    	#toTop {
+				bottom: 26px;
+				position: fixed;
+				display: none;
+				cursor: pointer;
+				background-color: #003698;
+				box-shadow: 0 3px 10px rgba(0,0,0,0.23),0 3px 10px rgba(0,0,0,0.16);
+				outline: 0 !important;
+				color: #fff;
+				border-radius: 100%;
+				font-size: 26px;
+				-webkit-transition: background-color 100ms linear;
+				transition: background-color 100ms linear;
+				height: 56px;
+				line-height: 26px;
+				width: 56px;
+				text-align: center;
+				padding: 15px;
+				right: 25px;
+				-webkit-transition: all 200ms ease;
+				transition: all 200ms ease;
+			}
+	    </style>
+	</head>
+	<body data-spy="scroll">
+		<!-- Barra Social Fixed -->
+		<div id="bar-social">
+			<ul>
+				<li>
+					<a href="https://www.facebook.com/emisoralauradio" target="_blank" class="fa fa-facebook"></a>
+				</li>
+				<li>
+					<a href="#" target="_blank" class="fa fa-google-plus"></a>
+				</li>
+				<li>
+					<a href="https://twitter.com/emisoralauradio/" target="_blank" class="fa fa-twitter"></a>
+				</li>
+				<li>
+					<a href="#" target="_blank" class="fa fa-instagram"></a>
+				</li>
+				<li>
+					<a href="https://www.youtube.com/channel/UC2ap-yNOlaTGR4a2rPMg2CA" target="_blank" class="fa fa-youtube"></a>
+				</li>
+				<li>
+					<a href="mailto:emisoralauradio@gmail.com" target="_blank" class="fa fa-mail-forward"></a>
+				</li>
+			</ul>
+	    </div>
+	    <!-- /Barra Social Fixed -->
+		<!-- Header -->
+		<header id="top" class="header navbar-fixed-top">
+			<div class="container">
+				<!-- Logo -->
+				<h1 class="logo pull-left">
+					<a class="scrollto" href="#inicio">
+						<img id="logo-image" class="logo-image" src="dist/img/uni.png" alt="Logo">
+						<span class="divider"></span>
+						<img id="logo-image" class="logo-image" src="dist/img/logo2.png" alt="Logo">
+						<!-- <span class="logo-title" style="display:0;">Radio</span> -->
+					</a>
+				</h1>
+				<!-- /Logo -->
+				<div class="player navbar-left" style="margin: 10px 0;">
+					<embed type="application/x-shockwave-flash" src="http://flashplayer.listen2myradio.com/mediaplayer/mediaplayer-licensed/player-licensed.swf" width="250" height="24" style="undefined" id="flashContent" name="flashContent" quality="high" allowfullscreen="false" allowscriptaccess="always" bgcolor="#FFFFFF" flashvars="provider=sound&amp;controller=bottom&amp;file=http%3A//78.129.187.57%3A18988/;stream.mp3&amp;duration=0&amp;skin=http%3A//flashplayer.listen2myradio.com/skins/nacht.zip&amp;autostart=true">
+				</div>
+				<!--End Player-->
+				<nav id="main-nav" class="main-nav navbar-right" role="navigation">
+					<!-- Nav-Header -->
+					<div class="navbar-header">
+						<button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded='false'>
+							<span class="sr-only">Menú</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+			    	</div>
+			    	<!-- /Nav-Header-->
+			    	<!-- Player Online -->
+	            	<!-- /Player Online -->
+					<div class="navbar-collapse collapse" id="navbar-collapse" aria-expanded="false" style="height:1px;">
+						<!-- Nav -->
+				    	<ul class="nav navbar-nav">
+							<li class="nav-item sr-only active">
+								<a class="scrollto" href="#inicio">Inicio</a>
+							</li>
+							<li class="nav-item">
+								<a class="scrollto" href="#programacion">Parrilla</a>
+							</li>
+							<li class="nav-item">
+								<a class="scrollto" href="#about">Quienes Somos</a>
+							</li>
+							<li class="nav-item">
+								<a class="scrollto" href="#grupo">Equipo</a>
+							</li>
+							<li class="nav-item">
+								<a class="scrollto" href="#episodios">Programas</a>
+							</li>
+							<li class="nav-item last">
+								<a class="scrollto" href="#contacto">Contacto</a>
+							</li>
+						</ul>
+						<!-- /Nav -->
+				    </div>
+				</nav>
+			</div>
+		</header>
+		<!-- /Header -->
+		<!-- Slide -->
+		<section id="inicio" class="inicio section offset-header has-pattern">
+			<div class="container">
+				<div class="row">
+					<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+						<!-- Indicators -->
+						<ol class="carousel-indicators">
+					    	<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+					    	<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+					    	<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+					    	<li data-target="#carousel-example-generic" data-slide-to="3"></li>
+						</ol>
+						<!-- Wrapper for slides -->
+						<div class="carousel-inner" role="listbox">
+						    <div class="item active">
+							    <img src="dist/slide/Img_1.JPG" alt="Primer Slide">
+						    	<div class="carousel-caption">
+						        	Trasmiciones de discusion social.
+							    </div>
+						    </div>
+						    <div class="item">
+						    	<img src="dist/slide/Img_2.JPG" alt="Segundo Slide">
+						      	<div class="carousel-caption">
+						        	Transmitiendo programas con Estudiantes.
+							    </div>
+						    </div>
+						    <div class="item">
+						    	<img src="dist/slide/Img_3.JPG" alt="Tercer Slide">
+						    	<div class="carousel-caption">
+						    		Actividades Sociales - Universidad.
+						    	</div>
+						    </div>
+						    <div class="item">
+						    	<img src="dist/slide/Img_4.JPG" alt="Cuarto Slide">
+						    	<div class="carousel-caption">
+						    		Grupo de Practicantes.
+						    	</div>
+						    </div>
+						</div>
+						<!-- Controls -->
+						<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+							<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+							<span class="sr-only">Anterior</span>
+						</a>
+						<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+							<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+							<span class="sr-only">Siguiente</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- /Slide -->
+		<!-- Stream -->
+		<section id="stream" class="stream section">
+			<div class="container">
+				<div class="row">
+					<!-- Content -->
+					<div class="content col-md-6 col-ms-12 col-xs-12 col-md-push-6 text-center animated fadeInRight delayp2" style="opacity: 0;">
+						<h2 class="title">¿Como estar con la U Radio?</h2>
+						<p class="intro">
+							Tu puedes seguir conectado a La U Radio desde el lugar en donde estes. 
+							Podras acceder a nuestra Aplicacion por medio de estos <a href="#">Codigos QR</a> escanealos y automaticamente inicia tu descarga.
+						</p>
+						<div class="qr-codes hidden-xs">
+							<!-- Nota -->
+							<div class="nota">
+								<p>Escanee el codigo QR</p>
+								<span class="left-arrow"></span>
+								<span class="right-arrow"></span>
+							</div>
+							<!-- /Nota -->
+							<!-- Nota -->
+							<div class="row">
+								<!-- Item 1 -->
+								<!-- <div class="item col-md-6 col-sm-6">
+									<img src="dist/img/qr-1.png" alt="QR iOS">
+									<p>Decargar para iOS</p>
+								</div> -->
+								<!-- /Item 1 -->
+								<!-- Item 2 -->
+								<div class="item col-md-12 col-sm-12">
+									<img src="dist/img/qr-1.png" alt="QR Android">
+									<p>Descargar para Android</p>
+								</div>
+								<!-- /Item 2 -->
+							</div>
+						</div>
+						<!-- /QR Codes -->
+					</div>
+					<!-- /Content -->
+					<!-- Video -->
+					<div id="video-container" class="video-container col-md-6 col-sm-12 col-xs-12 col-md-pull-6">
+						<div class="fluid-width-video-wrapper" style="padding-top: 56.140350877193%;">
+							<iframe width="854" height="340" src="https://www.youtube.com/embed/Bznxx12Ptl0" frameborder="0" allowfullscreen></iframe>
+						</div>
+					</div>
+					<!-- /Video -->
+				</div>
+			</div>
+		</section>
+		<!-- /Stream -->
+		<!-- Parrilla -->
+		<section id="programacion" class="programacion section">
+			<div class="container">
+				<div class="row">
+					<div class="content col-md-12 text-center animated fadeInDown delayp2" style="opacity: 0;">
+						<h2 class="title">Nuestra Programacion</h2>
+						<iframe src="https://www.google.com/calendar/embed?src=o327j2ru3lcsebv581bc7shln8%40group.calendar.google.com&title=Programacion%20Radial&amp;showNav=0&amp;showDate=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;mode=WEEK&amp;height=500&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;ctz=America%2FBogota" id="calendar" height="500" frameborder="0" scrolling="no"></iframe>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- /Parrilla -->
+		<!-- Quienes Somos -->
+		<section id="about" class="about section">
+			<div class="container">
+				<div class="row">
+					<h2 class="title text-center animated fadeInUp delayp1">Quienes Somos</h2>
+					<div class="item col-md-6 col-sm-12 col-xs-12">
+						<img class="img-responsive img-left" src="dist/img/grupo.jpg" alt="La U Radio">
+					</div>
+					<div class="item col-md-6 col-sm-12 col-xs-12">
+						
+						<div class="col-md-12 col-sd-6">
+							<h2>Mision</h2>
+							<div class="quote-box">
+								<blockquote class="quote">
+									<strong>‘La U Radio’</strong> espera contribuir al Desarrollo Humano y la Proyección Social, la cultura, la investigación, la ciencia, la educación y la ciudadanía; sus contenidos poseen un carácter y un sentido social dirigido en primera instancia a la comunidad académica de Uniminuto. Sin embargo pretende influir en las diferentes zonas de la región, estableciendo una programación que apoye y facilite el proceso de   solución de problemáticas en las comunidades.
+								</blockquote>
+							</div>
+						</div>
+						<div class="col-md-12 col-sd-6">
+							<h2>Vision</h2>
+							<div class="quote-box">
+								<blockquote class="quote">
+									<strong>‘La U Radio’</strong> Constituirse como la primera Radio Universitaria de la Región del Alto Magdalena, impactando de manera contundente a las comunidades por medio de contenidos informativos y educativos. Además La U Radio se proyecta para el año 2020 como  un medio radial posicionado por su labor periodística respondiendo al enfoque de Uniminuto: Desarrollo Humano y Proyección Social.
+								</blockquote>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- /Quienes somos -->
+		<!-- Equipo -->
+		<section id="grupo" class="grupo section">
+			<div class="container">
+				<div class="row">
+			    	<div class="member col-md-4 text-center animated fadeInDown delayp2" style="opacity: 0;">
+			    		<img class="img-rounded" src="dist/slide/Locutor_1.jpg" alt="Locutor 1"/>
+			    		<p class="name">Locutor 1</p>
+			    		<p class="title">Comunicador</p>
+			    		<ul class="connect list-inline">
+			    			<li>
+			    				<a target="_blank" href="#">
+									<i class="fa fa-facebook"></i>
+								</a>
+			    			</li>
+			    			<li>
+			    				<a target="_blank" href="#">
+									<i class="fa fa-twitter"></i>
+								</a>
+			    			</li>
+			    			<li class="row-end">
+			    				<a target="_blank" href="#">
+									<i class="fa fa-google-plus"></i>
+								</a>
+			    			</li>
+			    		</ul>
+			    	</div>
+			    	<div class="member col-md-4 text-center animated fadeInDown delayp2" style="opacity: 0;">
+			    		<img class="img-rounded" src="dist/slide/Locutor_2.jpg" alt="Locutor 2"/>
+			    		<p class="name">Locutor 2</p>
+			    		<p class="title">Comunicador</p>
+			    		<ul class="connect list-inline">
+			    			<li>
+			    				<a target="_blank" href="#">
+									<i class="fa fa-facebook"></i>
+								</a>
+			    			</li>
+			    			<li>
+			    				<a target="_blank" href="#">
+									<i class="fa fa-twitter"></i>
+								</a>
+			    			</li>
+			    			<li class="row-end">
+			    				<a target="_blank" href="#">
+									<i class="fa fa-dribbble"></i>
+								</a>
+			    			</li>
+			    		</ul>
+			    	</div>
+			    	<div class="member col-md-4 text-center animated fadeInDown delayp2" style="opacity: 0;">
+			    		<img class="img-rounded" src="dist/slide/Locutor_3.jpg" alt="Locutor 3"/>
+			    		<p class="name">Locutor 3</p>
+			    		<p class="title">Comunicador</p>
+			    		<ul class="connect list-inline">
+			    			<li>
+			    				<a target="_blank" href="#">
+									<i class="fa fa-facebook"></i>
+								</a>
+			    			</li>
+			    			<li>
+			    				<a target="_blank" href="#">
+									<i class="fa fa-twitter"></i>
+								</a>
+			    			</li>
+			    			<li class="row-end">
+			    				<a target="_blank" href="#">
+									<i class="fa fa-dribbble"></i>
+								</a>
+			    			</li>
+			    		</ul>
+			    	</div>
+				</div>
+			</div>
+		</section>
+		<!-- /Equipo -->
+		<!-- Episodios -->
+		<section id="episodios" class="episodios section">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<h2 class="intro-text text-center">
+							<strong>
+								Revive Nuestros Episodios
+							</strong>
+						</h2>
+						<p align="center">
+							Nuestra galería para recordar los mejores momentos.
+						</p>
+						<br>
+						<ul id="Grid">
+							<li class="col-md-4 col-sm-6 col-xs-12 5 item mix">
+								<div class="fluid-width-video-wrapper">
+									<a data-toggle="modal" data-target="#video1" title="Video de Prueba">
+										<img src="dist/slide/imagen4.svg" height="250px" class="embed-responsive-item"/>
+										<div class="title">
+											<p>
+												FilMinuto
+											</p>
+										</div>
+									</a>
+								</div>
+							</li> 
+							<li class="col-md-4 col-sm-6 col-xs-12 6 item mix">
+								<div class="fluid-width-video-wrapper">
+									<a data-toggle="modal" data-target="#video1" title="Video de Prueba">
+										<img src="dist/slide/imagen4.svg" height="250px" class="embed-responsive-item"/>
+										<div class="title">
+											<p>
+												FilMinuto
+											</p>
+										</div>
+									</a>
+								</div>
+							</li>
+							<li class="col-md-4 col-sm-6 col-xs-12 7 item mix">
+								<div class="fluid-width-video-wrapper">
+									<a data-toggle="modal" data-target="#video1" title="Video de Prueba">
+										<img src="dist/slide/imagen4.svg" height="250px" class="embed-responsive-item"/>
+										<div class="title">
+											<p>
+												FilMinuto
+											</p>
+										</div>
+									</a>
+								</div>
+							</li>
+							<li class="col-md-4 col-sm-6 col-xs-12 5 item mix">
+								<div class="fluid-width-video-wrapper">
+									<a data-toggle="modal" data-target="#video1" title="Video de Prueba">
+										<img src="dist/slide/imagen4.svg" height="250px" class="embed-responsive-item"/>
+										<div class="title">
+											<p>
+												FilMinuto
+											</p>
+										</div>
+									</a>
+								</div>
+							</li> 
+							<li class="col-md-4 col-sm-6 col-xs-12 6 item mix">
+								<div class="fluid-width-video-wrapper">
+									<a data-toggle="modal" data-target="#video1" title="Video de Prueba">
+										<img src="dist/slide/imagen4.svg" height="250px" class="embed-responsive-item"/>
+										<div class="title">
+											<p>
+												FilMinuto
+											</p>
+										</div>
+									</a>
+								</div>
+							</li>
+							<li class="col-md-4 col-sm-6 col-xs-12 7 item mix">
+								<div class="fluid-width-video-wrapper">
+									<a data-toggle="modal" data-target="#video1" title="Video de Prueba">
+										<img src="dist/slide/imagen4.svg" height="250px" class="embed-responsive-item"/>
+										<div class="title">
+											<p>
+												Video de Prueba
+											</p>
+										</div>
+									</a>
+								</div>
+							</li>
+							<li class="gap"></li>
+						</ul>
+						<div align="center">
+							<button type="button" class="btn btn-primary filter active" data-filter="all">Mostrar Todo</button>
+							<button type="button" class="btn btn-default filter" data-filter="5">Categoria 5</button>
+							<button type="button" class="btn btn-default filter" data-filter="6">Categoria 6</button>
+							<button type="button" class="btn btn-default filter" data-filter="7">Categoria 7</button>
+						</div>
+						<div class="modal fade" id="video1" tabindex="-1" role="dialog" aria-labelledby="video1" aria-hidden="true">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+										<h4 class="modal-title">Video de Prueba</h4>
+									</div>
+									<div class="modal-body">
+										<video width="640" height="360" preload="none" style="width: 100%; height: 100%;" id="player1">
+											<source type="video/youtube" src="https://www.youtube.com/watch?v=Y4HVNp2jZBo"/>
+											<!-- <source src="#" type="video/ogg"> -->
+											<em>Tu Navegador no soporta la etiqueta de Video</em>
+										</video>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- /Episodios -->
+		<!-- Contacto -->
+		<section id="contacto" class="contacto section">
+			<div class="container">
+				<div class="row text-center">
+					<h2 class="title animated fadeInUp delayp1" style="opacity: 0;">Contactanos</h2>
+					<div class="intro col-md-6 col-sm-12 col-xs-12 col-md-offset-3 animated fadeInUp delayp2" style="opacity: 0;">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi sapiente iusto sit soluta mollitia quidem sequi! Optio molestiae, vero quae temporibus autem repellendus, nihil vitae natus tempore explicabo nam maiores.</p>
+						<ul class="list-unstyled contacto-details">
+							<li>
+								<i class="fa fa-envelope"></i>
+								<a href="mailto:emisoralauradio@gmail.com">emisoralauradio@gmail.com</a>
+							</li>
+							<li>
+								<i class="fa fa-phone-square"></i>
+								<a href="">(+57 1)800 85 89</a>
+							</li>
+						</ul>
+						<button href="#" type="button" class="btn btn-theme btn-lg" data-toggle="modal" data-target="#Modal-form">Envíanos un mensaje</button>
+					</div>
+				</div>
+				<div class="row">
+					<div class="contacto-form col-md-6 col-sm-12 col-md-offset-3">
+						<!-- Modal -->
+						<div class="modal fade" id="Modal-form" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<form action="mailto:e.holmes.0517@gmail.com" class="form">
+							    		<div class="modal-header">
+								    		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								    			<span aria-hidden="true">&times;</span>
+								    		</button>
+								        	<h4 class="modal-title" id="myModalLabel">Envia tus Sugerencias</h4>
+								    	</div>
+								    	<div class="modal-body">
+												<div class="form-group nombre">
+													<label class="sr-only" for="nombre">Nombre</label>
+													<input id="nombre" type="text" class="form-control" placeholder="Nombre:"/>
+												</div>
+												<div class="form-group email">
+													<label class="sr-only" for="email">Email</label>
+													<input id="email" type="text" class="form-control" placeholder="Email:"/>
+												</div>
+												<div class="form-group mensaje">
+													<label class="sr-only" for="mensaje">Mensaje</label>
+													<textarea id="mensaje" class="form-control" cols="30" rows="6" style="max-width: 100%;" placeholder="Mensaje:"></textarea>
+												</div>
+									    </div>
+								    	<div class="modal-footer">
+											<button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+									    </div>
+									</form>
+							    </div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row text-center">
+					<ul class="social-icons list-inline">
+						<li>
+							<a href="#" target="_blank">
+								<i class="fa fa-facebook"></i>
+							</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">
+								<i class="fa fa-youtube"></i>
+							</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">
+								<i class="fa fa-twitter"></i>
+							</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">
+								<i class="fa fa-google-plus"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		<!-- /Contacto -->
+		<footer class="footer">
+			<div class="container">
+				<a href="http://uniminuto.edu/" style="max-height:50px;float:left;">
+					<img id="logo-image" class="logo-image" src="dist/img/uni.png" alt="Logo"/>
+				</a>
+				<span class="divider"></span>
+				<div class="pos-right">
+					<small class="copyright pull-left">
+						Copyright © 2015
+						<a href="#" target="_blank">Javier E. Martinez</a>
+					</small>
+					<ul class="links list-inline">
+						<li>
+							<a href="#">Estudiantes</a>
+						</li>
+						<li>
+							<a href="#">Informacion</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<a href="#" id="toTop" class="fa fa-angle-up" style="display: block;">
+				<span id="toTopHover" style="opacity: 1;"></span>
+			</a>
+		</footer>
+		<script type='text/javascript' src='bootstrap/js/jquery-1.11.2.min.js'></script>
+	    <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+	    <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+	    <script type="text/javascript" src="js/move-top.js"></script>
+	    <script type="text/javascript" src="js/mediaelement-and-player.min.js"></script>
+		<script type='text/javascript' src='bootstrap/js/bootstrap.min.js'></script>
+		<script type='text/javascript' src='js/jquery.inview.min.js'></script>
+		<script type='text/javascript' src='js/jquery.fitvids.js'></script>
+		<script type="text/javascript" src="js/mixitup.min.js"></script>
+		<script type='text/javascript' src='js/scrollTo.min.js'></script>
+		<script type='text/javascript' src='js/main_.js'></script>
+		<script type="text/javascript">
+			$(function(){
+				$("#Grid").mixitup();
+				}
+			);
+		</script>
+		<script type="text/javascript">
+            $(document).ready(function() {
+                $().UItoTop({ easingType: 'easeOutQuart' });/*transicion hacia arriba*/
+            });
+        </script>
+        <script>
+			$('audio, video').mediaelementplayer();
+		</script>
+	</body>
+</html>
