@@ -420,8 +420,8 @@ div .uni{
 	display: inline-block;
 	height: 42px;
 	left: 110px;
-	top: 40px;
 	position: absolute;
+	top: 40px;
 	width: 30px;
 	transform: rotate(330deg);
 	-webkit-transform: rotate(330deg);
@@ -432,9 +432,9 @@ div .uni{
 	background: url(../dist/img/down-arrow-right.png) no-repeat right top;
 	display: inline-block;
 	height: 42px;
+	position: absolute;
 	right: 110px;
 	top: 40px;
-	position: absolute;
 	width: 30px;
 	transform: rotate(30deg);
 	-webkit-transform: rotate(30deg);
@@ -509,10 +509,10 @@ div .uni{
 	display: inline-block;
 	color: #fff;
 	background: #000;
-	padding: 10px 15px;
 	font-size: 16px;
-	text-decoration: none;
+	padding: 10px 15px;
 	text-align: center;
+	text-decoration: none;
 	width: 100%;
 	-webkit-transition: all .5s ease;
 	-o-transition: all .5s ease;
@@ -545,7 +545,8 @@ div .uni{
 	display: inline-block;
 	margin: 10px 0;
 	position: relative;
-	right: -200px;
+	right: -160px;
+	top: 2px;
 }
 .header .player .mejs-container{
 	border-radius: 5px;
@@ -598,9 +599,9 @@ div .uni{
 }
 @media (max-width: 1200px){
 	.header .player{
+		bottom: 0;
+		left: 10px;
 		position: fixed;
 		/* right: 20px; */
-		left: 10px;
-		bottom: 0;
 	}
 }
