@@ -30,19 +30,24 @@
 	    	<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 	    <![endif]-->
 	    <style>
-	    	.fluid-width-video-wrapper{
-	    		padding: 0;
+		    .fluid-media-wrapper{
 	    		position: relative;
 	    		width: 100%;
+	    	}
+	    	.fluid-width-video-wrapper{
+	    		padding-top: 56.25%;
+				position: relative;
 	    	}
 	    	.fluid-width-video-wrapper iframe,
 	    	.fluid-width-video-wrapper object,
 	    	.fluid-width-video-wrapper embed{
-	    		left: 0;
-	    		/*height:100%;*/
-	    		position: absolute;
-	    		top: 0;
-	    		width: 100%;
+	    		border: none;
+				height: 100%;
+				position: absolute;
+				width: 100%;
+				left: 0;
+				top: 0;
+				background-color: #fff;
 	    	}
 	    	#toTop {
 				bottom: 26px;
@@ -107,6 +112,10 @@
 				</h1>
 				<!-- /Logo -->
 				<div class="player navbar-left" style="margin: 10px 0;">
+					<!-- <audio controls autoplay="autoplay">
+						<source src="http://78.129.187.57:18988/;stream.mp3" type="audio/mp3">
+						<em>Tu navegador no soporta este reproductor de Audio.</em>
+					</audio> -->
 					<embed type="application/x-shockwave-flash" src="http://flashplayer.listen2myradio.com/mediaplayer/mediaplayer-licensed/player-licensed.swf" width="250" height="24" style="undefined" id="flashContent" name="flashContent" quality="high" allowfullscreen="false" allowscriptaccess="always" bgcolor="#FFFFFF" flashvars="provider=sound&amp;controller=bottom&amp;file=http%3A//78.129.187.57%3A18988/;stream.mp3&amp;duration=0&amp;skin=http%3A//flashplayer.listen2myradio.com/skins/nacht.zip&amp;autostart=true">
 				</div>
 				<!--End Player-->
@@ -166,7 +175,7 @@
 						<!-- Wrapper for slides -->
 						<div class="carousel-inner" role="listbox">
 						    <div class="item active">
-							    <img src="dist/slide/Img.JPG" alt="Primer Slide">
+							    <img src="dist/slide/Img_5.jpg" alt="Primer Slide">
 						    	<div class="carousel-caption">
 						        	Primer encuentro de Prensa Independiente.
 							    </div>
@@ -244,8 +253,8 @@
 					<!-- /Content -->
 					<!-- Video -->
 					<div id="video-container" class="video-container col-md-6 col-sm-12 col-xs-12 col-md-pull-6">
-						<div class="fluid-width-video-wrapper" style="padding-top: 56.140350877193%;">
-							<iframe width="854" height="340" src="https://www.youtube.com/embed/Bznxx12Ptl0" frameborder="0" allowfullscreen></iframe>
+						<div class="fluid-width-video-wrapper" style="padding-top: 56.25%; position:relative;">
+							<iframe data-auto-play="0" title="YouTube video player" data-controls="1" data-video-id="Bznxx12Ptl0" src="https://www.youtube.com/embed/Bznxx12Ptl0?autoplay=0&amp;color=red&amp;controls=1&amp;rel=0&amp;showinfo=0&amp;fs=1&amp;theme=light&amp;wmode=opaque&amp;html5=1&amp;enablejsapi=1" frameborder="0" allowfullscreen></iframe>
 						</div>
 					</div>
 					<!-- /Video -->
@@ -324,8 +333,8 @@
 			    	</div>
 			    	<div class="member col-md-4 text-center animated fadeInDown delayp2" style="opacity: 0;">
 			    		<img class="img-rounded" src="dist/slide/Locutor2.jpg" alt="Locutor 2"/>
-			    		<p class="name">Locutor 2</p>
-			    		<p class="title">Comunicador</p>
+			    		<p class="name">Director de Emisora</p>
+			    		<p class="title">Comunicador y Docente</p>
 			    		<ul class="connect list-inline">
 			    			<li>
 			    				<a target="_blank" href="#">
@@ -386,12 +395,9 @@
 						<br>
 						<ul id="Grid">
 							<li class="col-md-4 col-sm-6 col-xs-12 5 item mix">
-								<div class="fluid-width-video-wrapper">
+								<div class="fluid-media-wrapper">
 									<a data-toggle="modal" data-target="#video1" title="Video de Prueba">
 										<img src="dist/img/multimedia.jpg" height="250px" class="embed-responsive-item"/>
-										<!-- <video height="250" preload="none" poster="dist/img/multimedia.jpg" class="embed-responsive-item">
-											<source type="video/youtube" src="https://www.youtube.com/watch?v=Y4HVNp2jZBo"/>
-										</video> -->
 										<div class="title">
 											<p>
 												FilMinuto
@@ -401,7 +407,7 @@
 								</div>
 							</li> 
 							<li class="col-md-4 col-sm-6 col-xs-12 6 item mix">
-								<div class="fluid-width-video-wrapper">
+								<div class="fluid-media-wrapper">
 									<a data-toggle="modal" data-target="#video1" title="Video de Prueba">
 										<img src="dist/img/multimedia.jpg" height="250px" class="embed-responsive-item"/>
 										<div class="title">
@@ -413,7 +419,7 @@
 								</div>
 							</li>
 							<li class="col-md-4 col-sm-6 col-xs-12 7 item mix">
-								<div class="fluid-width-video-wrapper">
+								<div class="fluid-media-wrapper">
 									<a data-toggle="modal" data-target="#video1" title="Video de Prueba">
 										<img src="dist/img/multimedia.jpg" height="250px" class="embed-responsive-item"/>
 										<div class="title">
@@ -425,7 +431,7 @@
 								</div>
 							</li>
 							<li class="col-md-4 col-sm-6 col-xs-12 5 item mix">
-								<div class="fluid-width-video-wrapper">
+								<div class="fluid-media-wrapper">
 									<a data-toggle="modal" data-target="#video1" title="Video de Prueba">
 										<img src="dist/img/multimedia.jpg" height="250px" class="embed-responsive-item"/>
 										<div class="title">
@@ -437,7 +443,7 @@
 								</div>
 							</li> 
 							<li class="col-md-4 col-sm-6 col-xs-12 6 item mix">
-								<div class="fluid-width-video-wrapper">
+								<div class="fluid-media-wrapper">
 									<a data-toggle="modal" data-target="#video1" title="Video de Prueba">
 										<img src="dist/img/multimedia.jpg" height="250px" class="embed-responsive-item"/>
 										<div class="title">
@@ -449,7 +455,7 @@
 								</div>
 							</li>
 							<li class="col-md-4 col-sm-6 col-xs-12 7 item mix">
-								<div class="fluid-width-video-wrapper">
+								<div class="fluid-media-wrapper">
 									<a data-toggle="modal" data-target="#video1" title="Video de Prueba">
 										<img src="dist/img/multimedia.jpg" height="250px" class="embed-responsive-item"/>
 										<div class="title">
@@ -470,18 +476,13 @@
 						</div>
 						<div class="modal fade" id="video1" tabindex="-1" role="dialog" aria-labelledby="video1" aria-hidden="true">
 							<div class="modal-dialog">
-								<div class="modal-content">
+								<div class="modal-content" style="border-radius:0;">
 									<div class="modal-header">
 										<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
 										<h4 class="modal-title">FilMinuto</h4>
 									</div>
-									<div class="modal-body">
-										<!-- <video width="640" height="360" preload style="width: 100%; height: 100%;" id="player1">
-											<source type="video/youtube" src="https://www.youtube.com/watch?v=Y4HVNp2jZBo"/>
-											<<source src="#" type="video/ogg">
-											<em>Tu Navegador no soporta la etiqueta de Video</em>
-										</video> -->
-										<iframe style="height:320px; width:100%;" data-auto-play="0" title="YouTube video player" data-controls="1" src="https://www.youtube.com/embed/Y4HVNp2jZBo?autoplay=0&amp;color=red&amp;controls=1&amp;rel=0&amp;showinfo=0&amp;fs=1&amp;theme=light&amp;wmode=opaque&amp;html5=1&amp;enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+									<div class="fluid-width-video-wrapper" style="padding-top: 56.25%; position:relative;">
+										<iframe data-auto-play="0" title="YouTube video player" data-controls="1" data-video-id="Y4HVNp2jZBo" src="https://www.youtube.com/embed/Y4HVNp2jZBo?autoplay=0&amp;color=red&amp;controls=1&amp;rel=0&amp;showinfo=0&amp;fs=1&amp;theme=light&amp;wmode=opaque&amp;html5=1&amp;enablejsapi=1" frameborder="0" allowfullscreen></iframe>
 										<!-- <iframe id="video" data-auto-play="0" data-controls="1" data-video-id="0Rgf9UL1N_c" frameborder="0" allowfullscreen="1" title="YouTube video player" width="930" height="523" src="https://www.youtube.com/embed/0Rgf9UL1N_c?autoplay=0&amp;color=red&amp;controls=1&amp;rel=0&amp;showinfo=0&amp;fs=1&amp;theme=light&amp;wmode=opaque&amp;html5=1&amp;enablejsapi=1&amp;origin=https%3A%2F%2Fwww.udacity.com"></iframe> -->
 									</div>
 								</div>
