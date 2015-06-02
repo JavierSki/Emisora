@@ -18,33 +18,10 @@
 	/*width: 100%;*/
 	display: none;
 }
-#Grid .mix .title{
-	background: #444;
-	color: #fff;
-	font-size: 10px;
+#Grid .mix .section-title{
+	background: #4e4e4e;
+	font-size: 14px;
 	width: 100%;
-}
-#Grid li.mix > a{
-	display: inline-block;
-	height: 200px;
-	transition: border .4s ease-in-out;
-	-webkit-transition: border .4s ease-in-out;
-	-moz-transition: border .4s ease-in-out;
-	-o-transition: border .4s ease-in-out;
-}
-#Grid li.mix > a:hover{
-	/*border-color: #ccc;*/
-}
-#Grid li.mix > a > img{
-	border-radius: 0;
-	margin: 0;
-	width: 100%;
-	height: 100%;
-}
-#Grid .mix .title p{
-	display: inline-block;
-	margin: 10px 0;
-	text-align: center;
 }
 #Grid .gap{
 	display: inline-block;
