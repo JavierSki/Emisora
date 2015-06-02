@@ -23,7 +23,9 @@ body{
 	font-family: "Helvetica Neue", Helvetica, Arial, Sans-serif;
 }
 img.embed-responsive-item{
-	width: 100%;
+	display: block;
+	height: auto;
+	max-width: 100%;
 }
 span.mejs-duration{
 	display: none;
@@ -72,6 +74,20 @@ span.mejs-duration{
 	-o-border-radius: 7px;
 	margin: 0 auto;
 }
+button.close.dismiss-close{
+	margin-right: -12px;
+	margin-top: -12px;
+}
+.close.dismiss-close{
+	background-image: url(../dist/img/dismiss-close.png);
+	height: 24px;
+	opacity: 1;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 24px;
+	z-index: 10000;
+}
 .about{
 	/*background: url(../uploads/acercade/fondo-acercade.jpg) no-repeat center center fixed;
 	-webkit-background-size: cover;
@@ -112,22 +128,13 @@ span.mejs-duration{
 	padding-left: 20px;
 }
 .episodios{
-	/*background: url(../dist/img/fondo-podcast.jpg) no-repeat center center fixed;
-	-webkit-background-size:cover;
-	-moz-background-size:cover;
-	-o-background-size:cover;
-	background-size:cover;*/
-	/*-webkit-border-radius:8px 8px 8px 8px;
-	border-radius:8px 8px 8px 8px;*/
 	color: #444;
 	padding: 80px 0;
 }
 .content-logos{
-	/* display: inline-block; */
 	margin: 0 auto;
 	padding-top: 10%;
 	text-align: center;
-	/*width: 1000px;*/
 }
 .contacto{
 	background: rgba(0, 56, 150, .8);
@@ -153,11 +160,8 @@ span.mejs-duration{
 }
 .contacto .intro li{
 	margin-bottom: 10px;
-	color: #143856;
+	color: #fff;
 	font-size: 16px;
-}
-.contacto .intro li a{
-	color: #143856;
 }
 .contact .intro li a:hover {
 	color: #0b1d2c;
@@ -168,6 +172,12 @@ span.mejs-duration{
 .contacto .intro ul{
 	margin-top: 30px;
 	margin-bottom: 30px;
+}
+.contacto .intro ul li, .contacto .intro ul li a, .contacto .intro ul li a:focus, .contacto .intro ul li a:active, .contacto .intro ul li a:visited{
+	color: #fff;
+}
+.contacto .intro ul li a:hover, .contacto .intro ul li a:active{
+	  border-bottom: 1px #fff dotted;
 }
 .contacto .title{
 	margin-top: 0;
@@ -216,41 +226,93 @@ div .uni{
 	-moz-transition-delay: .3s;
 	-o-transition-delay: .3s;	
 }
+.email{
+	padding-left: 6px;
+}
+.email, .nombre{
+	float: left;
+	padding-bottom: 10px;
+	width: 50%;
+}
+.fluid-media-wrapper{
+	position: relative;
+	width: 100%;
+	cursor: pointer;
+}
+.fluid-media-wrapper > .view-episodio{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -33px;
+	margin-left: -33px;
+}
+.fluid-media-wrapper .view-episodio .icon-player-episodio{
+	background-image: url(../dist/img/Play-1.png);
+	display: block;
+	height: 66px;
+	transition: background-image .2s linear;
+	-webkit-transition: background-image .2s linear;
+	-moz-transition: background-image .2s linear;
+	-o-transition: background-image .2s linear;
+	width: 66px;
+}
+.fluid-media-wrapper:hover .view-episodio .icon-player-episodio{
+	background-image: url(../dist/img/Play-2.png);
+	text-decoration: none;
+}
+.fluid-width-video-wrapper{
+	padding-top: 56.25%;
+	position: relative;
+}
+.fluid-width-video-wrapper iframe,
+.fluid-width-video-wrapper object,
+.fluid-width-video-wrapper embed{
+	border: none;
+	height: 100%;
+	position: absolute;
+	width: 100%;
+	left: 0;
+	top: 0;
+	background-color: #fff;
+}
 .footer{
 	background: #444;
-	color: #fff;
+	color: #b3b3b3;
 	padding: 30px 0;
 }
 .footer .divider{
 	background: #7f7f7f;
 	display: inline-block;
-	height: 40px;
+	height: 80px;
 	position: absolute;
 	vertical-align: middle;
 	width: 2px;
 }
 .footer .pos-right{
-	bottom: -13px;
-	left: 10px;
+	/*bottom: -13px;*/
+	right: 10px;
 	position: relative;
 }
 .footer img#logo-image{
 	margin-right: 8px;
 	max-height: 50px;
 }
-.footer .copyright{
+.footer .pull-left{
 	color: #b3b3b3;
+	font-size: small;
 	margin-right: 15px;
-}
-.footer .copyright a{
-	color: #87b8e2;
+	text-align: left;
+	width: 100%;
 }
 .footer .links{
 	margin-bottom: 0;
 	text-align: right;
 }
 .footer .links a{
-	color: #808080;
+	color: #87b8e2;
+}
+.footer .links a:hover, .footer .links a:active{
+	border-bottom: 1px #87b8e2 dotted;
 }
 .grupo{
 	background: rgba(0, 56, 150, .8);
@@ -491,6 +553,15 @@ div .uni{
 .social-icons li{
 	float: left;
 }
+.text-center{
+	text-align: center;
+}
+.text-inverse{
+	color: #fff;
+}
+.text-uppercase{
+	text-transform: uppercase;
+}
 #bar-social{
 	position: fixed;
 	left: 0;
@@ -546,7 +617,6 @@ div .uni{
 	margin: 10px 0;
 	position: relative;
 	right: -160px;
-	top: 2px;
 }
 .header .player .mejs-container{
 	border-radius: 5px;
